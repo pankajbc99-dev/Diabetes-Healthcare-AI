@@ -1,0 +1,7 @@
+{
+  "name": "DHC AI - Diabetes Health Care",
+  "description": "An AI-powered health platform for diabetes risk assessment, visual insights, and conversational support using Gemini, aligned with UN SDG 3.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
