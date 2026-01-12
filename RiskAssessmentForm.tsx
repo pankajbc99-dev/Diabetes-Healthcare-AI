@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { HealthMetrics } from '../types';
 import { Activity, User, Scale, Droplet, Clock } from 'lucide-react';
@@ -22,7 +21,7 @@ const RiskAssessmentForm: React.FC<Props> = ({ onSubmit, isLoading }) => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setMetrics(prev => ({ ...prev, [name]: parseFloat(value) || 0 }));
+    setMetrics((prev: HealthMetrics) => ({ ...prev, [name]: parseFloat(value) || 0 }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
